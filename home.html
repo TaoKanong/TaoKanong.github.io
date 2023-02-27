@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            body {
+                background-color: rgb(40, 45, 58);
+                /* background-image: url('./images/img_girl.jpg'); */
+                /* background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%; */
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                color: rgb(239, 239, 239);
+            }
+
+            p {
+                color: red;
+            }
+
+            .hi {
+                color: rgb(242, 95, 95);
+            }
+
+            .tab-head {
+                color: rgb(40, 45, 58);
+            }
+
+            .sec-bg {
+                background-color: rgb(53, 59, 74);
+            }
+
+            .bg-university {
+                background-color: rgb(142, 69, 187);
+            }
+
+            @keyframes blink {
+                50% {
+                    color: transparent
+                }
+            }
+
+            @keyframes blink-slash {
+                0% {
+                    color: transparent
+                }
+            }
+
+            .loader__dot {
+                animation: 1s blink infinite
+            }
+
+            .loader__dot:nth-child(2) {
+                animation-delay: 250ms
+            }
+
+            .loader__dot:nth-child(3) {
+                animation-delay: 500ms
+            }
+
+            .loader__slash {
+                animation: 0.7s blink-slash infinite
+            }
+
+            .loader__slash:nth-child(2) {
+                animation-delay: 250ms
+            }
+
+            .loader__slash:nth-child(3) {
+                animation-delay: 250ms
+            }
+
+            .nav-link {
+                background-color: #fffb00;
+                color: rgb(239, 239, 239);
+                font-size: 20px;
+            }
+
+            .nav-link.active {
+                color: #10d61a;
+            }
+
+            .mt-6 {
+                margin-top: 4rem;
+            }
+
+            .mt-7 {
+                margin-top: 6rem;
+            }
+
+            .btn-tab-head:hover {
+                color: rgb(239, 239, 239);
+                color: rgb(242, 95, 95);
+                /*set the color you want here*/
+            }
+
+            #projet-image {
+                height: 20rem;
+                width: 20rem;
+                object-fit: cover;
+                overflow: hidden;
+                border-radius: 20px
+            }
+
+            #projet-image-content {
+                width: 37rem;
+                max-width: 550px;
+                height: 20rem;
+                object-fit: cover;
+                overflow: hidden;
+                border-radius: 20px
+            }
+
+            .nav-pills .nav-link.active {
+                background-color: rgb(255, 255, 255);
+                border-radius: 20px;
+                border-color: rgb(15, 130, 230);
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .hover-effect:hover {
+                opacity: 0.5;
+                transition: .2s ease;
+            }
+
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                background: rgb(162, 47, 47);
+                background: rgba(186, 13, 13, 0.5);
+                /* Black see-through */
+                color: #f1f1f1;
+                width: 100%;
+                transition: .5s ease;
+                opacity: 0;
+                color: white;
+                font-size: 20px;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+
+        <script src="https://kit.fontawesome.com/19c80627af.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col align-self-center sec-bg">
+                    <h1 class="d-flex justify-content-center">Jarukit Chanchiaw
+                        <div class="loader">
+                            <span class="loader__dot">.</span>
+                        </div>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-6 ">
+                <div class="col-6 ">
+                    <h1 class="hi d-flex justify-content-center">
+                        Hi!
+                        <span class="loader__slash">|</span>
+                        </h5>
+                        <h4 class="d-flex justify-content-center">
+                            I'm Jarukit chanchiaw, a Passionate game programmer and game designer, I love to try
+                            something new on game development.
+                        </h4>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <a href="mailto: jarukitchan@gmail.com">
+                                    <div class="fa-3x d-flex justify-content-center mt-6">
+                                        <i class="fa-solid fa-envelope fa-bounce"
+                                            style="--fa-animation-duration: 2s; color: Tomato;"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-sm-6 col-md-6">
+                                <a href="https://www.instagram.com/jarukit_chanchiaw/">
+                                    <div class="fa-3x d-flex justify-content-center mt-6">
+                                        <i class="fa-brands fa-instagram fa-bounce"
+                                            style="--fa-animation-duration: 2s; color: Tomato;"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <hr class="mt-6"
+                style="height:5px;border-width:0;color:rgb(255, 255, 255);background-color:rgb(255, 255, 255)">
+
+            <div class="mt-7">
+                <nav class="d-flex justify-content-center">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active px-5 btn-lg btn-tab-head" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">
+                            Unity projects
+                        </button>
+                        <button class="nav-link px-5 btn-lg btn-tab-head" id="nav-profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                            aria-selected="false">
+                            Other
+                        </button>
+
+                    </div>
+                </nav>
+
+                <!-- project  -->
+                <div class="tab-content mt-7 " id="nav-tabContent">
+                    <div class="tab-pane fade show active " id="nav-home" role="tabpanel"
+                        aria-labelledby="nav-home-tab">
+
+                        <ul class="nav nav-pills mb-3 row" id="pills-tab" role="tablist">
+                            <!-- project list -->
+
+                            <li class="nav-item col-sm-12 col-md-4 d-flex justify-content-center" role="presentation">
+                                <button class="nav-link d-flex justify-content-center" id="pills-home-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                                    aria-controls="pills-home" aria-selected="true"
+                                    onClick="document.getElementById('project-content').scrollIntoView();">
+
+                                    <div class="card sec-bg " style="width: 20rem; border-radius: 20px;">
+                                        <img src="./images/zone-5.png" class=" card-img-top" alt="..."
+                                            id="projet-image">
+                                        <div class="card-body d-flex justify-content-center">
+
+                                            <div class="row">
+                                                <div class="col-12 d-flex justify-content-center">
+                                                    <div class="card bg-primary d-flex justify-content-center"
+                                                        style="width: 12rem;color: rgb(255, 255, 255);">
+                                                        Intern project.
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 mt-3">
+                                                    <h5 class="card-title">Zone-5</h5>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+
+
+                                </button>
+
+                            </li>
+                            <li class="nav-item col-sm-12 col-md-4 d-flex justify-content-center" role="presentation">
+                                <button class="nav-link d-flex justify-content-center" id="pills-profile-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false"
+                                    onClick="document.getElementById('project-content').scrollIntoView();">
+
+                                    <div class="card sec-bg " style="width: 20rem; border-radius: 20px;">
+                                        <img src="./images/Statmodifier-2.jpg" class=" card-img-top" alt="..."
+                                            id="projet-image">
+                                        <div class="card-body d-flex justify-content-center">
+
+                                            <div class="row">
+                                                <div class="col-12 d-flex justify-content-center">
+                                                    <div class="card bg-warning d-flex justify-content-center"
+                                                        style="width: 12rem;color: black;">
+                                                        Personal project.
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 mt-3">
+                                                    <h5 class="card-title">Item Statmodifier system</h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </button>
+                            </li>
+                            <li class="nav-item col-sm-12 col-md-4 d-flex justify-content-center" role="presentation">
+                                <button class="nav-link d-flex justify-content-center" id="pills-contact-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false"
+                                    onClick="document.getElementById('project-content').scrollIntoView();">
+
+                                    <div class="card sec-bg " style="width: 20rem; border-radius: 20px;">
+                                        <img src="./images/Roguelike-monster-cover.png" class=" card-img-top" alt="..."
+                                            id="projet-image">
+                                        <div class="card-body d-flex justify-content-center">
+
+                                            <div class="row">
+                                                <div class="col-12 d-flex justify-content-center">
+                                                    <div class="card bg-warning d-flex justify-content-center"
+                                                        style="width: 12rem;color: black;">
+                                                        Personal project.
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 mt-3">
+                                                    <h5 class="card-title">AI with state pattern</h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </button>
+                            </li>
+
+                            <li class="nav-item col-sm-12 col-md-4 d-flex justify-content-center" role="presentation">
+                                <button class="nav-link d-flex justify-content-center" id="Minigame-sword-tab"
+                                    data-bs-toggle="pill" data-bs-target="#Minigame-sword" type="button" role="tab"
+                                    aria-controls="Minigame-sword" aria-selected="false"
+                                    onClick="document.getElementById('project-content').scrollIntoView();">
+
+                                    <div class="card sec-bg " style="width: 20rem; border-radius: 20px;">
+                                        <img src="./images/Minigame Sword N majik.png" class=" card-img-top" alt="..."
+                                            id="projet-image">
+                                        <div class="card-body d-flex justify-content-center ">
+
+                                            <div class="row">
+                                                <div class="col-12 d-flex justify-content-center">
+                                                    <div class="card bg-university d-flex justify-content-center"
+                                                        style="width: 12rem;color: rgb(255, 255, 255);">
+                                                        University project.
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 mt-3">
+                                                    <h5 class="card-title">Minigame sword n majikk</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </li>
+
+
+
+
+
+                        </ul>
+
+
+                        <!-- break line between project and detail -->
+                        <hr class="mt-7 mb-5"
+                            style="height:5px;border-width:0;color:rgb(255, 255, 255);background-color:rgb(255, 255, 255)">
+                        <!-- break line between project and detail -->
+
+
+
+                        <!-- project detail -->
+                        <div class="tab-content mt-7" id="pills-tabContent">
+
+                            <!-- project detail zone - 5-->
+                            <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                                <!-- image -->
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                        <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                            <a
+                                                href="https://www.youtube.com/watch?v=e1LS2IjUx18&list=PLkgj5XP9o1oTVRJm6TfHJIwoYBc0KFUWO&index=1">
+                                                <img src="./images/zone-5.png" class=" card-img-top" alt="..."
+                                                    id="projet-image-content">
+
+                                                <i class="fa-solid fa-play" style="color: Tomato; size: 50px;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- name -->
+                                <div class="row mt-5">
+                                    <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                        <h1 class="hi">
+                                            Application Food scan 2021
+                                            <span class="loader__slash">.</span>
+                                            <span class="loader__slash">.</span>
+                                            <span class="loader__slash">.</span>
+                                        </h1>
+                                    </div>
+                                </div>
+
+                                <!-- detail -->
+                                <div class="row mt-2">
+                                    <div class="col-sm-12 col-md-12  d-flex justify-content-center">
+                                        <div class="card sec-bg " style="width: 50rem; border-radius: 20px;">
+                                            <div class="card-body d-flex justify-content-center">
+                                                <h5 class="card-title d-flex justify-content-center">
+                                                    แอปบอกคุณสมบัติของอาหารด้วยโปรแกรมแสดงวิดีโอ
+                                                    วิธีการทำงานของโปรแกรม เริ่มต้นวิดีโอโดยการวางอาหารให้อยู่ในมุมกล้อง
+                                                    จากนั้นตัวแอปจะเริ่มเล่นวิดีโอตามชนิดอาหารที่ถูกวางไว้
+                                                    ผมมีหน้าที่เป็นโปรแกรมเมอร์
+                                                    พัฒนาตัวแอปแสดงวิดีโอโดยนำอินพุตมาประมวลผลด้วย Unity
+                                                    โดยพัฒนาตามโจทย์ที่บริษัทกำหนดมาให้
+                                                    <br>
+                                                    โปรเจคนี้เป็นชิ้นงานของบริษัท Increstive จำกัด
+                                                    ผลงานชิ้นนี้ได้ถูกนำไปจัดแสดงที่โรงพยาบาลศิริราช
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ************************************************** -->
+                            <!-- project list Statmod-->
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <!-- image -->
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                        <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                            <a href="https://youtu.be/NosJUvWDMVo">
+                                                <img src="./images/Statmodifier-2.jpg" class=" card-img-top" alt="..."
+                                                    id="projet-image-content">
+
+                                                <i class="fa-solid fa-play" style="color: Tomato; size: 50px;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- name -->
+                                <div class="row mt-5">
+                                    <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                        <h1 class="hi">
+                                            Item Statmodifier
+                                            <span class="loader__slash">.</span>
+                                            <span class="loader__slash">.</span>
+                                            <span class="loader__slash">.</span>
+                                        </h1>
+                                    </div>
+
+                                </div>
+                                <div class="row mt-2">
+                                    <h1>
+                                        <a href="https://github.com/TaoKanong/StatModifier-1-git">
+                                            <div class="col-sm-12 col-md-12  d-flex justify-content-center">
+                                                <i class="fa-brands fa-github"></i>
+                                            </div>
+                                        </a>
+                                    </h1>
+                                </div>
+                                <!-- detail -->
+                                <div class="row mt-2">
+                                    <div class="col-sm-12 col-md-12  d-flex justify-content-center">
+                                        <div class="card sec-bg " style="width: 50rem; border-radius: 20px;">
+                                            <div class="card-body d-flex justify-content-center">
+                                                <h5 class="card-title d-flex justify-content-center">
+                                                    ผมพัฒนาระบบ Item ที่สามารถ modifier stat ของผู้สวมใส่ได้
+                                                    Item มี 2 ชนิด weapon และ module โดยทั้งสองชนิดนี้สามารถ modifier
+                                                    stat ได้
+                                                    ผมเขียนให้ตัว item เป็น scriptable object สามารถดีไซน์ stat
+                                                    ไอเท็มได้โดยไม่ต้องเขียนโค้ดเพิ่มเติม สามารถสร้างผ่านหน้าเมนูได้เลย
+
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ************************************************** -->
+                            <!-- project list AI with state pattern-->
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <!-- image -->
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                        <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                            <a
+                                                href="https://www.youtube.com/watch?v=9giEGORe_l0&list=PLkgj5XP9o1oQu-u5OZJPHERN6OIKI0oS4&index=1&t=1s">
+                                                <img src="./images/Roguelike-monster-cover.png" class=" card-img-top"
+                                                    alt="..." id="projet-image-content">
+
+                                                <i class="fa-solid fa-play" style="color: Tomato; size: 50px;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- name -->
+                                <div class="row mt-5">
+                                    <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                        <h1 class="hi">
+                                            AI with state pattern.
+                                            <span class="loader__slash">.</span>
+                                            <span class="loader__slash">.</span>
+                                            <span class="loader__slash">.</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <h1>
+                                        <a href="https://github.com/TaoKanong/minnie-333-prototype">
+                                            <div class="col-sm-12 col-md-12  d-flex justify-content-center">
+                                                <i class="fa-brands fa-github"></i>
+                                            </div>
+                                        </a>
+                                    </h1>
+                                </div>
+
+                                <!-- detail -->
+                                <div class="row mt-2">
+                                    <div class="col-sm-12 col-md-12  d-flex justify-content-center">
+                                        <div class="card sec-bg " style="width: 50rem; border-radius: 20px;">
+                                            <div class="card-body d-flex justify-content-center">
+                                                <h5 class="card-title d-flex justify-content-center">
+                                                    เกม Rogue like พัฒนาร่วมกับเพื่อนของผมอีกคนนึง ยังอยู่ในขั้นทดลอง
+                                                    Prototype อยู่ ผมมีหน้าที่ทำ
+                                                    AI behavior ใช้ State pattern โดยมี Field of view ของ Monster
+                                                    เป็นตัวเช็คระยะการโจมตี ระยะหนี ซึ่งสามารถปรับระยะได้
+                                                    และระยะการมองเห็น Monster บางชนิดจะมี state ไม่เหมือนตัวอื่น เช่น
+                                                    Heavy monster ไม่ติด Stagger จากการโจมตีของผู้เล่น ในขณะที่ Monster
+                                                    ชนิดอื่นจะสามารถ Stagger ได้จากการโดนผู้เล่นโจมตี
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ************************************************** -->
+
+
+                            <!-- project list Minigame sword n majikk-->
+                            <div class="tab-pane fade" id="Minigame-sword" role="tabpanel"
+                                aria-labelledby="Minigame-sword-tab">
+                                <!-- image -->
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                        <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                            <a href="https://www.youtube.com/watch?v=jw1s7xoxqAU">
+                                                <img src="./images/Minigame Sword N majik.png" class=" card-img-top"
+                                                    alt="..." id="projet-image-content">
+
+                                                <i class="fa-solid fa-play" style="color: Tomato; size: 50px;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- name -->
+                                <div class="row mt-5">
+                                    <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                        <h1 class="hi">
+                                            Minigame sword n majikk.
+                                            <span class="loader__slash">.</span>
+                                            <span class="loader__slash">.</span>
+                                            <span class="loader__slash">.</span>
+                                        </h1>
+                                    </div>
+                                </div>
+
+                                <!-- detail -->
+                                <div class="row mt-2">
+                                    <div class="col-sm-12 col-md-12  d-flex justify-content-center">
+                                        <div class="card sec-bg " style="width: 50rem; border-radius: 20px;">
+                                            <div class="card-body d-flex justify-content-center">
+                                                <h5 class="card-title d-flex justify-content-center">
+                                                    ผู้เล่นจะต้องทำลายกล่องแดงให้ทันก่อนเวลาหมด โดยมี Enemy ai
+                                                    ไล่ล่าผู้เล่นเป็นอุปสรรคของเกม ผู้เล่นสามารถฟันดาบและ ปล่อยลูกไฟได้
+                                                    โดยกล่องแดงจะรับ Damage ได้จากการ Melee เท่านั้น
+                                                    โปรเจคนี้ได้ลองฝึกใช้ Blend tree ช่วยเรื่องของ Animation
+                                                    การเคลื่อนไหวตัวละครให้เป็นธรรมชาติยิ่งขึ้น
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="mt-6" id="project-content"
+                                style="height:5px;border-width:0;color:rgb(255, 255, 255);background-color:rgb(255, 255, 255)">
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <!-- ******************************************Other tab************************************* -->
+                    <!-- ******************************************Other tab************************************* -->
+                    <!-- ******************************************Other tab************************************* -->
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="tab-content mt-7 " id="nav-tabContent">
+                            <div class="tab-pane fade show active " id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+
+                                <ul class="nav nav-pills mb-3 row" id="pills-tab" role="tablist">
+                                    <!-- project list Pingpong-->
+
+                                    <li class="nav-item col-sm-12 col-md-4 d-flex justify-content-center"
+                                        role="presentation">
+                                        <button class="nav-link d-flex justify-content-center" id="pingpong-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pingpong" type="button" role="tab"
+                                            aria-controls="pingpong" aria-selected="true"
+                                            onClick="document.getElementById('project-content-other').scrollIntoView();">
+
+                                            <div class="card sec-bg " style="width: 20rem; border-radius: 20px;">
+                                                <img src="./images/Pingpon-2.png" class=" card-img-top" alt="..."
+                                                    id="projet-image">
+                                                <div class="card-body d-flex justify-content-center">
+
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex justify-content-center">
+                                                            <div class="card bg-university d-flex justify-content-center"
+                                                                style="width: 12rem;color: rgb(255, 255, 255);">
+                                                                University project.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 mt-3">
+                                                            <h5 class="card-title">Interactive table tenis</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+
+                                    <!-- project list Webapp-->
+
+                                    <li class="nav-item col-sm-12 col-md-4 d-flex justify-content-center"
+                                        role="presentation">
+                                        <button class="nav-link d-flex justify-content-center" id="webapp-tab"
+                                            data-bs-toggle="pill" data-bs-target="#webapp" type="button" role="tab"
+                                            aria-controls="webapp" aria-selected="true"
+                                            onClick="document.getElementById('project-content-other').scrollIntoView();">
+
+                                            <div class="card sec-bg " style="width: 20rem; border-radius: 20px;">
+                                                <img src="./images/Webapp.png" class=" card-img-top" alt="..."
+                                                    id="projet-image">
+                                                <div class="card-body d-flex justify-content-center">
+
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex justify-content-center">
+                                                            <div class="card bg-university d-flex justify-content-center"
+                                                                style="width: 12rem;color: rgb(255, 255, 255);">
+                                                                University project.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 mt-3">
+                                                            <h5 class="card-title">Web application Experience hub</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+
+                                    <li class="nav-item col-sm-12 col-md-4 d-flex justify-content-center"
+                                        role="presentation">
+                                        <button class="nav-link d-flex justify-content-center" id="collection-tab"
+                                            data-bs-toggle="pill" data-bs-target="#collection" type="button" role="tab"
+                                            aria-controls="collection" aria-selected="true"
+                                            onClick="document.getElementById('project-content-other').scrollIntoView();">
+
+                                            <div class="card sec-bg " style="width: 20rem; border-radius: 20px;">
+                                                <img src="./images/3D-3.png" class=" card-img-top" alt="..."
+                                                    id="projet-image">
+                                                <div class="card-body d-flex justify-content-center">
+
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex justify-content-center">
+                                                            <div class="card bg-university d-flex justify-content-center"
+                                                                style="width: 12rem;color: rgb(255, 255, 255);">
+                                                                University project.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 mt-3">
+                                                            <h5 class="card-title">3D Stuff</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+
+                                    <li class="nav-item col-sm-12 col-md-4 d-flex justify-content-center"
+                                        role="presentation">
+                                        <button class="nav-link d-flex justify-content-center" id="AR-game-tab"
+                                            data-bs-toggle="pill" data-bs-target="#AR-game" type="button" role="tab"
+                                            aria-controls="AR-game" aria-selected="false"
+                                            onClick="document.getElementById('project-content').scrollIntoView();">
+
+                                            <div class="card sec-bg " style="width: 20rem; border-radius: 20px;">
+                                                <img src="./images/AR-2.png" class=" card-img-top" alt="..."
+                                                    id="projet-image">
+                                                <div class="card-body d-flex justify-content-center ">
+
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex justify-content-center">
+                                                            <div class="card bg-university d-flex justify-content-center"
+                                                                style="width: 12rem;color: rgb(255, 255, 255);">
+                                                                University project.
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 mt-3">
+                                                            <h5 class="card-title">Minigame sword n majikk</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+
+                                </ul>
+
+                                <!-- break line between project and detail -->
+                                <hr class="mt-7 mb-5"
+                                    style="height:5px;border-width:0;color:rgb(255, 255, 255);background-color:rgb(255, 255, 255)">
+                                <!-- break line between project and detail -->
+
+                                <!-- project detail -->
+                                <div class="tab-content mt-7" id="pills-tabContent">
+
+                                    <!-- project detail pingpong-->
+                                    <div class="tab-pane fade" id="pingpong" role="tabpanel"
+                                        aria-labelledby="pingpong-tab">
+
+                                        <!-- image -->
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                                <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                                    <a href="https://www.youtube.com/watch?v=DRg2L_Bpdro">
+                                                        <img src="./images/Pingpong.jpg" class=" card-img-top" alt="..."
+                                                            id="projet-image-content">
+
+                                                        <i class="fa-solid fa-play"
+                                                            style="color: Tomato; size: 50px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- name -->
+                                        <div class="row mt-5">
+                                            <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                                <h1 class="hi">
+                                                    Interactive table tenis (Ponghub)
+                                                    <span class="loader__slash">.</span>
+                                                    <span class="loader__slash">.</span>
+                                                    <span class="loader__slash">.</span>
+                                                </h1>
+                                            </div>
+                                        </div>
+
+                                        <!-- detail -->
+                                        <div class="row mt-2">
+                                            <div class="col-sm-12 col-md-12  d-flex justify-content-center">
+                                                <div class="card sec-bg " style="width: 50rem; border-radius: 20px;">
+                                                    <div class="card-body d-flex justify-content-center">
+                                                        <h5 class="card-title d-flex justify-content-center">
+                                                            โปรเจคโต๊ะปิงปอง Interactive
+                                                            ตัวอาร์ตจะตอบสนองตามลูกปิงปองหรือไซส์ออปเจคเท่าลูกปิงปอง การ
+                                                            Tracking
+                                                            ตามลูกปิงปองจะใช้กล้อง Realsense
+                                                            ที่จับระยะห่างของพื้นที่โดยใช้อินฟาเรดทำให้ได้เปรียบในพื้นที่ที่แสงอยู่ไม่นิ่ง
+                                                            ระยะห่างของพื้นจะออกมาเป็นสีที่ต่างกัน เช่น ระยะใกล้สีจะมืด
+                                                            ระยะไกลสีจะสว่าง
+                                                            ทำให้เราแยกสีในความสูงของลูกปิงปองที่ต่างระดับกับโต๊ะได้
+                                                            หลังจากนั้นใช้ Threshold ให้เป็นขาวดำ
+                                                            ลูกปิงปองจึงสามารถกรองให้ออกมาเป็นแกน X, Y ได้โดยใช้ Blob
+                                                            tracking แล้วส่งแกน X, Y เป็น Input เข้าไปยังตัว Art
+                                                            <br>
+                                                            -
+                                                            มีหน้าที่ทำในส่วนของการนำอินพุตจากกล้องให้จับลูกปิงปองและแปลงเป็นแกน
+                                                            X, Y
+                                                            เพื่อนำไปใช้กับตัวอาร์ต
+                                                            โดยโปรเจคนี้ได้ถูกจัดแสดงในงาน Open house
+                                                            ของมหาวิทยาลัยกรุงเทพ
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- project detail weba pp*************-->
+                                    <div class="tab-pane fade" id="webapp" role="tabpanel" aria-labelledby="webapp-tab">
+
+                                        <!-- image -->
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                                <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                                    <a href="https://www.youtube.com/watch?v=aGlOBptfrYc">
+                                                        <img src="./images/Webapp.png" class=" card-img-top" alt="..."
+                                                            id="projet-image-content">
+
+                                                        <i class="fa-solid fa-play"
+                                                            style="color: Tomato; size: 50px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- name -->
+                                        <div class="row mt-5">
+                                            <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                                <h1 class="hi">
+                                                    Web application Experience hub
+                                                    <span class="loader__slash">.</span>
+                                                    <span class="loader__slash">.</span>
+                                                    <span class="loader__slash">.</span>
+                                                </h1>
+                                            </div>
+                                        </div>
+
+                                        <!-- detail -->
+                                        <div class="row mt-2">
+                                            <div class="col-sm-12 col-md-12  d-flex justify-content-center">
+                                                <div class="card sec-bg " style="width: 50rem; border-radius: 20px;">
+                                                    <div class="card-body d-flex justify-content-center">
+                                                        <h5 class="card-title d-flex justify-content-center">
+                                                            โปรเจคนี้ มีหน้าที่
+                                                            <br>
+                                                            - Front-end development นำ API จาก Back-end มาใช้งานในฝั่ง
+                                                            Client
+                                                            <br>
+                                                            - Back-end development เขียน Query จาก Database
+                                                            <br>
+                                                            เว็บแอปสำหรับรวมกลุ่มคนที่สนใจทำงานโปรเจคด้วยกัน
+                                                            โดยตัวเว็บสามารถโพสรายละเอียดโปรเจคของเราโดยระบุตำแหน่ง
+                                                            และจำนวนตำแหน่งที่เราต้องการได้
+                                                            หลังจากโพสลงเว็บเมื่อมีคนสนใจจะเข้าร่วม
+                                                            เราสามารถดูข้อมูลคนที่ขอเข้าร่วมโปรเจคเราได้
+                                                            เราจะรับหรือปฏิเสธคนที่ขอเข้าร่วมโปรเจคเราได้
+
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- project detail 3d*************-->
+                                    <div class="tab-pane fade" id="collection" role="tabpanel"
+                                        aria-labelledby="collection-tab">
+
+                                        <!-- image -->
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                                <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                                    <img src="./images/3D-3.png" class=" card-img-top" alt="..."
+                                                        id="projet-image-content">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- name -->
+                                        <div class="row mt-5">
+                                            <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                                <h1 class="hi">
+                                                    3D collection i made
+                                                    <span class="loader__slash">.</span>
+                                                    <span class="loader__slash">.</span>
+                                                    <span class="loader__slash">.</span>
+                                                </h1>
+                                            </div>
+                                        </div>
+
+
+
+                                        <!-- ************************************************Picture*************************************************** -->
+                                        <div class="row mt-5">
+                                            <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                                <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                                    <img src="./images/3D-1.png" class=" card-img-top" alt="..."
+                                                        id="projet-image-content">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-5">
+                                            <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                                <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                                    <img src="./images/3D-2.png" class=" card-img-top" alt="..."
+                                                        id="projet-image-content">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-5">
+                                            <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                                <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                                    <img src="./images/3D-4.png" class=" card-img-top" alt="..."
+                                                        id="projet-image-content">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-5">
+                                            <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                                <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                                    <img src="./images/3D-5.png" class=" card-img-top" alt="..."
+                                                        id="projet-image-content">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-5">
+                                            <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                                <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                                    <img src="./images/3D-6.png" class=" card-img-top" alt="..."
+                                                        id="projet-image-content">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-5">
+                                            <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                                <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                                    <img src="./images/3D-8.jpg" class=" card-img-top" alt="..."
+                                                        id="projet-image-content">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- ************************************************Picture*************************************************** -->
+                                    </div>
+
+                                    <!-- project list AR-->
+                                    <div class="tab-pane fade" id="AR-game" role="tabpanel"
+                                        aria-labelledby="AR-game-tab">
+                                        <!-- image -->
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                                <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                                    <a href="https://www.youtube.com/shorts/X7uG3S35aII">
+                                                        <img src="./images/AR-2.png" class=" card-img-top" alt="..."
+                                                            id="projet-image-content">
+
+                                                        <i class="fa-solid fa-play"
+                                                            style="color: Tomato; size: 50px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- name -->
+                                        <div class="row mt-5">
+                                            <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                                <h1 class="hi">
+                                                    Endless runner AR game
+                                                    <span class="loader__slash">.</span>
+                                                    <span class="loader__slash">.</span>
+                                                    <span class="loader__slash">.</span>
+                                                </h1>
+                                            </div>
+                                        </div>
+
+                                        <!-- detail -->
+                                        <div class="row mt-2">
+                                            <div class="col-sm-12 col-md-12  d-flex justify-content-center">
+                                                <div class="card sec-bg " style="width: 50rem; border-radius: 20px;">
+                                                    <div class="card-body d-flex justify-content-center">
+                                                        <h5 class="card-title d-flex justify-content-center">
+                                                            เกม Endless running AR ที่นำแสดงในงาน Open house
+                                                            ของมหาวิทยาลัย
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <hr class="mt-6" id="project-content-other"
+                                    style="height:5px;border-width:0;color:rgb(255, 255, 255);background-color:rgb(255, 255, 255)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <h5>skill tab content</h5>
+                    </div>
+                </div>
+
+                <section id="project-content"></section>
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+            </script>
+    </body>
+
+</html>
