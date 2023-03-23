@@ -227,6 +227,37 @@
                         aria-labelledby="nav-home-tab">
 
                         <ul class="nav nav-pills mb-3 row" id="pills-tab" role="tablist">
+
+                            <!-- project list -->
+
+                            <li class="nav-item col-sm-12 col-md-4 d-flex justify-content-center" role="presentation">
+                                <button class="nav-link d-flex justify-content-center" id="dnb-tab"
+                                    data-bs-toggle="pill" data-bs-target="#dnb" type="button" role="tab"
+                                    aria-controls="dnb" aria-selected="true"
+                                    onClick="document.getElementById('project-content').scrollIntoView();">
+
+                                    <div class="card sec-bg " style="width: 20rem; border-radius: 20px;">
+                                        <img src="./images/dnb.png" class=" card-img-top" alt="..." id="projet-image">
+                                        <div class="card-body d-flex justify-content-center">
+
+                                            <div class="row">
+                                                <div class="col-12 d-flex justify-content-center">
+                                                    <div class="card bg-warning d-flex justify-content-center"
+                                                        style="width: 12rem;color: black;">
+                                                        Personal project.
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 mt-3">
+                                                    <h5 class="card-title">Dual N Back Clone</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+
+                            </li>
+
                             <!-- project list -->
 
                             <li class="nav-item col-sm-12 col-md-4 d-flex justify-content-center" role="presentation">
@@ -252,14 +283,8 @@
                                                     <h5 class="card-title">Zone-5</h5>
                                                 </div>
                                             </div>
-
-
-
                                         </div>
                                     </div>
-
-
-
                                 </button>
 
                             </li>
@@ -367,6 +392,104 @@
                         <!-- project detail -->
                         <div class="tab-content mt-7" id="pills-tabContent">
 
+                            <!-- project detail dnb - 5-->
+                            <div class="tab-pane fade" id="dnb" role="tabpanel" aria-labelledby="dnb-tab">
+
+                                <!-- image -->
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                        <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                            <a
+                                                href="https://www.youtube.com/watch?v=WzuDIhEr36I&list=PLkgj5XP9o1oStA072TifB-HquDGbij0DT&index=1">
+                                                <img src="./images/dnb.png" class=" card-img-top" alt="..."
+                                                    id="projet-image-content">
+
+                                                <i class="fa-solid fa-play" style="color: Tomato; size: 50px;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- name -->
+                                <div class="row mt-5">
+                                    <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                        <h1 class="hi">
+                                            Dual N back Clone
+                                            <span class="loader__slash">.</span>
+                                            <span class="loader__slash">.</span>
+                                            <span class="loader__slash">.</span>
+                                        </h1>
+                                    </div>
+                                </div>
+
+                                <!-- detail -->
+                                <div class="row mt-2">
+                                    <div class="col-sm-12 col-md-12  d-flex justify-content-center">
+                                        <div class="card sec-bg " style="width: 50rem; border-radius: 20px;">
+                                            <div class="card-body d-flex justify-content-center">
+                                                <h5 class="card-title d-flex justify-content-center">
+                                                    Dual N Back เกมฝึกความจำ ผมได้ลองทำตัว clone
+                                                    ขึ้นมาโดยมีต้นแบบจากเว็บไซต์แห่งนึง
+                                                    ผมได้ลองแกะวิธีการคิดคำนวนคำทั้งหมดและจำนวนคำที่ถูกต้อง ในแบบคร่าว ๆ
+                                                    ผมไม่แน่ใจว่าวิธีนี้เป็นวิธีหลักรึป่าว แต่เป็นวิธีการที่ใช้งานได้แน่
+                                                    ๆ
+                                                    ตัวโปรแกรมมีฟีเจอร์การทำงานตามเกม Dual n back แบบปกติ
+                                                    <br>
+                                                    ภาพ ตย วิธีการคิดแบบคร่าว ๆ
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                        <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                            <img src="./images/dnb-1.png" class=" card-img-top" alt="..."
+                                                id="projet-image-content">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-sm-12 col-md-12  d-flex justify-content-center">
+                                        <div class="card sec-bg " style="width: 50rem; border-radius: 20px;">
+                                            <div class="card-body d-flex justify-content-center">
+                                                <h5 class="card-title d-flex justify-content-center">
+                                                    วิธีคิดคือ
+                                                    <br>
+                                                    จำนวนทั้งหมด = 20 + (n * n)
+                                                    <br>
+                                                    จำนวนที่ Match กัน = N / 2 + previousMatch
+                                                    <br>
+                                                    (base เริ่มด้วย 5 หรือ N:1 => 5 Match)
+                                                    <br>
+                                                    <br>
+                                                    ยกตัวอย่างเช่น
+                                                    N = 2
+                                                    <br>
+                                                    จำนวนทั้งหมด = 20 + (2 * 2)
+                                                    <br>
+                                                    จำนวนทั้งหมด = 24
+                                                    <br>
+                                                    จำนวนที่ Match = 2 / 2 + 5 => 6 Match
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                        <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                            <img src="./images/dnb-2.png" class=" card-img-top" alt="..."
+                                                id="projet-image-content">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ********************** -->
                             <!-- project detail zone - 5-->
                             <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
@@ -469,9 +592,24 @@
                                                     stat ได้
                                                     ผมเขียนให้ตัว item เป็น scriptable object สามารถดีไซน์ stat
                                                     ไอเท็มได้โดยไม่ต้องเขียนโค้ดเพิ่มเติม สามารถสร้างผ่านหน้าเมนูได้เลย
-
+                                                    <br>
+                                                    การเก็บ Stat เข้า Item โดยตัว Stat
+                                                    เองสามารถเพิ่มใหม่ได้ด้วยการสร้างผ่าน Scriptable object ซึ่งตัว item
+                                                    จะเก็บ stat เป็น Stat definition
+                                                    มีชื่อของ stat และ value ของมัน ในหนึ่งไอเท็มสามารถใส่ได้หลาย stat
+                                                    <br>
+                                                    ภาพด้านล่างเป็น Uml ส่วนนึงของระบบ Stat system โดยส่วนนี้เป็นของ
+                                                    Item ที่เก็บ stat
                                                 </h5>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-sm-12 col-md-12 d-flex justify-content-center">
+                                        <div class="card sec-bg hover-effect" style="border-radius: 20px;">
+                                            <img src="./images/Statmodifier-3.png" class=" card-img-top" alt="...">
                                         </div>
                                     </div>
                                 </div>
